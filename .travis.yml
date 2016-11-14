@@ -9,5 +9,4 @@ addons:
 env:
   global:
     - secure: tB1LstMGKgNTov6yifz1gICJZ4MsL6WYLxiYidjYTp6I3xpKQhZa8I310zLsKh4l6KJkLtT1S2QS1vZGYaAp9qVoNqaYYpxtaiqDbAfgEF6JqKj4YzNnZA5XH9/bFTgNqka1TdXnhaCi5iwC1pUMnutZAsHpFN3BqSe5iEPc+ZQXnV7fLygTc5hiYleP7crVOytkAQaMPQ48qtP7xf68k6hxeBZIXEJdMWADtk+X7bbc2TbWBy0IM+jg88N6EtJcI7iLmfbNDkawz8Yii8Wgdlhb/U6KL0b/zUHfRynK6QS9y8BblCajqfGVd58USjSKpisWTfmLLGfbI4PB/4mdbkox7ubLKS0AGTi8VPNd0UKXne9m5ly3Ss/2xebQHIAbFVl+jbA+lwrGnrmWJly09wNobqEQ/d3jVKStbm6b87PfzlLB2ZCh7E3wkaRIaHAM3z5OAdgmIZ7PySZiZxDVgdUYGstz4+AE5tlwufQnzal64XhgA61kvjq2ryqV+Xs1vXYrivgJUz0Cjtf/OnGevG1SqOtRRyuyVotzYgSZP/iARxJLY1uv8spT64x/LPWQt1ZT50kY0w0mwG6+lq92pGp6MNhMqN6y522Zmod+jO0ooyXJWSdzVJyFCA7vflmI53dHfyufq2gaNhqtdkXtO/yHnkcpQkyQeiYpaov/dxk=
-  script:
-  - sonar-scanner -Dsonar.host.url=https:/sonarqube.com -Dsonar.login=$SONAR_TOKEN
+  script: mvn clean install sonar:sonar -Dsonar.host.url=https://sonarqube.com -Dsonar.login=$SONAR_TOKEN
