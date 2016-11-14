@@ -8,7 +8,7 @@ addons:
   sonarqube: true
 env:
   global:
-    - secure: 2c11c91f64a9ff6aef1a0125828c034cf531291a
+    - secure: cji01nRb1LANg+748H7VPscxlcNYpYWV8Oe5Dgl0mIt5dNn/f+B+nwa8OYjoV2oNou3EQs6r00lpPVMnhT/ETJsbeBk39zCDjcHiCScFBX2OXjEpyw8KBxiQQ6UPM60Ou/wSVgdaButEvxR149wEblFkiia68lrKmk0rxypVhRhqblZGq2SrHfjfNA4hOe+gMZNHPWeZ0BLXt8D3bINJksd1UBDfxa99Hg3osN6knNG+HpE7DEuRht0qCSxMyDchA5n9YQ1yuHj6igpRM6t/rR/aZzLORCN70SjS+sru2p/DJMH3bP+sX09eM9nsn1EqlpXX7G8HBZyQMZjyZ1K3Di3Eb1tSZWtieBX54BRnE0vtjwYQo/gNGEF+WYnvLDGfPDjK/71u9Ltgh1gG92XP5/czdGLdSewORR5Ug9fmMtqrvrgdDxLJWx0zPeECBTx90qCnw5mJeMLx9yZbMKSvGm8CVHhp+++sno7Pa6+/eMjeUwZTgICocu6rjjhu6G97WHtnRn37545mBN2FgF5b1o6F29095h4HEgIHw5nRIFTTsTaKE6ltkBHqDOOCGJ2AzKGaPRfkbaPu1CKTA4Xutt1HuCgSmED+KYtl9VqrPMOkeQ/ab/v7SPh2whoLBqixvAVCZ+Tdf7PLnWBf6+sPNFj5YOxzXGIXt9Rd6rZ+xz0=
 script:
   # other script steps might be done before running the actual SonarQube analysis
   - sonar-scanner -Dsonar.host.url=https://sonarqube.com -Dsonar.login=$SONAR_TOKEN
