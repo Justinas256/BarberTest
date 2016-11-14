@@ -3,3 +3,12 @@ jdk:
   - oraclejdk8
 before_install:
  - chmod +x gradlew
+
+addons:
+  sonarqube: true
+env:
+  global:
+    - secure: 2c11c91f64a9ff6aef1a0125828c034cf531291a
+script:
+  # other script steps might be done before running the actual SonarQube analysis
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN
