@@ -11,4 +11,4 @@ env:
     - secure: 2c11c91f64a9ff6aef1a0125828c034cf531291a
 script:
   # other script steps might be done before running the actual SonarQube analysis
-  - sonar -Dsonar.host.url=https:/sonarqube.com -Dsonar.login=$SONAR_TOKEN
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN
